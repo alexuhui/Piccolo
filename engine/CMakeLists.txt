@@ -21,7 +21,7 @@ if(ENABLE_PHYSICS_DEBUG_RENDERER)
 endif()
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-    add_compile_options("/MP")
+    add_compile_options("/MP" "/WX-")
     set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT PiccoloEditor)
 endif()
 
